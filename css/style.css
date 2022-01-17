@@ -126,15 +126,74 @@ text-align: justify;
 
 
 /*--- PORTFOLIO ---*/
-.content-section .thumbnail { position: relative; overflow: hidden; cursor: pointer; }
-.content-section .thumbnail * { transition: all .25s; }
-.content-section .thumbnail h4 { font-size: 19px; font-weight: 400; }
-.content-section .thumbnail p { line-height: 24px; }
-.content-section .thumbnail:hover h4, .content-section .thumbnail:hover p { color: #AFAFAF; }
-.content-section .thumbnail:hover img { opacity: 0.25;  }
-.content-section .thumbnail:after { font-family: 'FontAwesome'; content: '\f121'; color: #FFF; font-size: 48px; line-height: 80px; top: 70%; position: absolute; text-align: center; display: inline-block; width: 100%; transition: all .35s; opacity: 0; width: 86px; height: 86px; margin-left: auto; margin-right: auto; left: 0; right: 0; border-radius: 50%; background: transparent; border:3px solid transparent; }
-.content-section .thumbnail:hover:after { top: 25%; opacity: 1; color: #FFFFFF; background: #AF6204; border:3px solid #FFFFFF; }
+.content-section .thumbnail {
+   position: relative;
+    overflow: hidden; 
+    cursor: pointer; }
 
+
+    
+.content-section .thumbnail * {
+   transition: all .25s;
+   }
+.content-section .thumbnail h4 {
+   font-size: 19px; 
+   font-weight: 400; }
+.content-section .thumbnail p {
+   line-height: 24px; 
+  }
+
+
+.content-section .thumbnail:hover h4,
+ .content-section .thumbnail:hover p {
+   color: #AFAFAF; 
+  }
+
+  /* To blur the image when click on it */
+.content-section .thumbnail:hover img {
+   /* opacity: 0.25;   */
+  
+  }
+
+/* Zoom the image (expand the image to cover*/
+.content-section .thumbnail:hover {
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  /*IE9*/-webkit-transform: scale(1.15);
+  /*SafariandChrome*/:;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -o-transform: scale(1.15);
+}
+
+.content-section .thumbnail:after {
+   font-family: 'FontAwesome';
+    content: '\f121';
+    color: #FFF; 
+    font-size: 48px;
+    line-height: 80px;
+     top: 70%;
+    position: absolute; 
+    text-align: center;
+    display: inline-block; 
+    width: 100%; transition: all .35s;
+    opacity: 0;
+    width: 86px;
+    height: 86px; 
+    margin-left: auto; 
+    margin-right: auto;
+    left: 0; right: 0; 
+    border-radius: 50%;
+    background: transparent; 
+    border:3px solid transparent; }
+
+content-section .thumbnail
 
 /*--- CONTACT ---*/
 #contact {

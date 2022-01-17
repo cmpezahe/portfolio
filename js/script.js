@@ -7,6 +7,3 @@ $(document).ready(function(){
     	});
 });
 
-
-var test = "Working";
-console.log(test);
